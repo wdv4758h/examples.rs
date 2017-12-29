@@ -1,0 +1,9 @@
+[package]
+authors = ["Chiu-Hsiang Hsu <wdv4758h@gmail.com>"]
+name = "http"
+version = "0.1.0"
+
+[dependencies]
+hyper       = "0.11.9"  # HTTP client
+futures     = "0.1.17"  # async future
+tokio-core  = "0.1.11"  # async core
