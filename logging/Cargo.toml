@@ -1,0 +1,8 @@
+[package]
+authors = ["Chiu-Hsiang Hsu <wdv4758h@gmail.com>"]
+name = "log"
+version = "0.1.0"
+
+[dependencies]
+log = "0.4.0"               # base of logging
+env_logger = "0.5.0-rc.1"   # simple logger implementation
