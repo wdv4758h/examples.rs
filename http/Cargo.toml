@@ -5,5 +5,6 @@ version = "0.1.0"
 
 [dependencies]
 hyper       = "0.11.9"  # HTTP client
+hyper-tls   = "0.1.2"   # HTTPS support
 futures     = "0.1.17"  # async future
 tokio-core  = "0.1.11"  # async core

@@ -1,4 +1,5 @@
 extern crate hyper;
+extern crate hyper_tls;
 extern crate futures;
 extern crate tokio_core;
 
@@ -14,6 +15,12 @@ fn main() {
 
     //  *hyper::Chunk ->  [u8]
     // &*hyper::Chunk -> &[u8]
+
+    // support both "https://" and "http://"
+    let data: String =
+      utils::https_get(&url,
+                       |body| Ok(String::from_utf8_lossy(&*body).to_ascii_lowercase()));
+    println!("{}", data);
 
     // support only "http://"
     let data: String =
