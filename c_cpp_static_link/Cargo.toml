@@ -1,0 +1,8 @@
+[package]
+authors = ["Chiu-Hsiang Hsu <wdv4758h@gmail.com>"]
+name = "c_cpp_static_link"
+version = "0.1.0"
+build = "build.rs"
+
+[build-dependencies]
+cc = { version = "1.0.4", features = ["parallel"] }
