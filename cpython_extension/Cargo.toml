@@ -1,0 +1,11 @@
+[package]
+authors = ["Chiu-Hsiang Hsu <wdv4758h@gmail.com>"]
+name = "cpython_extension"
+version = "0.1.0"
+
+[lib]
+name = "_foo"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.2.3", features = ["extension-module"] }
